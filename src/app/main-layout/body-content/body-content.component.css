@@ -1,0 +1,28 @@
+.sidenav-specs {
+  width: 200px;
+
+  /*background-color:whitesmoke;*/
+}
+
+
+/*.body-height {
+  height: 100%;
+  overflow: auto;
+}*/
+
+/*.body-padding{
+  flex-grow:2;
+}*/
+
+.flex-class {
+  /*height:inherit;*/
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.height-inherit{
+    height:inherit;
+}
+

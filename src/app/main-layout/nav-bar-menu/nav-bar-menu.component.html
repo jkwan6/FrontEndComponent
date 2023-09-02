@@ -1,0 +1,46 @@
+<div class="body-height">
+  <mat-toolbar color="primary">
+
+    <div class="body-width LayoutFlexContainer">
+
+      <div class="Flex-Content1">
+        <button (click)="vm.isPressed = !vm.isPressed; onToggle()"
+                [ngClass]="{'pressed':vm.isPressed}"
+                mat-button
+                [matTooltip]="!vm.isPressed ? 'Menu' : 'Close'"
+                [matTooltipShowDelay]="showDelay.value"
+                [matTooltipHideDelay]="hideDelay.value">
+          <mat-icon>{{!vm.isPressed ? 'menu' : 'close'}}</mat-icon>
+        </button>
+      </div>
+
+      <!--Dummy Div To Span NavBar Content-->
+      <div class="Flex-Content2"></div>
+
+      <div>
+
+        <span class="flex-container-no-wrap">
+
+          <a *ngIf="!this.isLoggedIn"
+             mat-flat-button
+             class="Pill-Button2"
+             color="secondary"
+             [routerLink]="['/login']">
+            Log In
+          </a>
+
+          <a *ngIf="this.isLoggedIn"
+             mat-flat-button
+             class="Pill-Button3"
+             color="secondary"
+             (click)="openDialog('0ms', '0ms')">
+            Logout
+          </a>
+
+        </span>
+      </div>
+
+    </div>
+
+  </mat-toolbar>
+</div>

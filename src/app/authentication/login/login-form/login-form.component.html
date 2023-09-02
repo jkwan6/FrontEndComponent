@@ -1,0 +1,48 @@
+<div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <mat-form-field style="margin-bottom:-1.25em;"
+                    class="log-in-field"
+                    appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput
+             formControlName="email"
+             autocomplete="on">
+    </mat-form-field>
+
+    <mat-form-field style="margin-bottom: -1.25em;"
+                    class="log-in-field"
+                    appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput
+             formControlName="password"
+             [type]="hide ? 'password' : 'text'"
+             autocomplete="on">
+
+      <button type="button"
+              mat-icon-button
+              matSuffix (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+        <mat-icon>
+          {{hide ? 'visibility_off' : 'visibility'}}
+        </mat-icon>
+      </button>
+
+    </mat-form-field>
+
+    <div class="flex-content">
+      <button color="primary"
+              class="log-in-button"
+              type="submit"
+              mat-raised-button>
+        Login
+      </button>
+      <div class="error"
+           *ngIf="this.loginFailed">
+      Log In Failed, Try Again.
+      </div>
+    </div>
+  </form>
+</div>

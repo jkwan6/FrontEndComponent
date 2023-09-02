@@ -1,0 +1,74 @@
+.text-row{
+    padding-left:15px;
+    display:flex;
+    padding-bottom:10px;
+}
+
+/*.body-content{
+    flex-grow:1;
+    flex-shrink:1;
+    height:100px;
+}*/
+
+/*.contact-details-block{
+    padding-top:5px;
+}*/
+
+.filler1{
+    margin: auto;
+}
+
+.block-title{
+    display:inline-block;
+    margin:5px;
+    font-weight:600;
+    text-decoration:underline;
+    cursor:default;
+}
+
+.link-styles {
+    padding-left:5px;
+    margin-top:8px;
+    font-weight:500;
+    text-decoration:none;
+    color: inherit;
+}
+
+.link-styles:visited {
+  text-decoration: none;
+}
+
+.link-styles:hover {
+  text-decoration: underline;
+}
+
+
+.social-media{
+    padding-top:8px;
+}
+
+.symbol-styles{
+    padding:5px;
+}
+
+
+
+
+.fa-brands{
+    padding-left:20px;
+    text-decoration:none;
+    color: inherit;
+}
+
+.fa-brands:visited {
+}
+
+.address-tab{
+    height:stretch;
+    min-height: 400px;
+    width: stretch;
+}
+
+.border{
+    margin: 10px;
+}

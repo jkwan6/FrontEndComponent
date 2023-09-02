@@ -1,0 +1,104 @@
+<div class="container">
+  <div *ngIf="this.form.get('email')!.errors?.['fieldsDoNotMatch']">
+    Name is required.
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="title-style-1">
+      Insert Username and Password
+    </div>
+
+
+    <div class="test">
+      <mat-form-field style="margin-bottom:-1.25em;"
+                      class="log-in-field"
+                      appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput
+               formControlName="email">
+      </mat-form-field>
+    </div>
+
+    <div class="test">
+      <mat-form-field style="margin-bottom: -1.25em;"
+                      class="log-in-field"
+                      appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput
+               formControlName="password"
+               [type]="passwordHide ? 'password' : 'text'">
+
+        <button *ngIf="this.form.controls['password'].dirty"
+                type="button"
+                mat-icon-button
+                matSuffix (click)="passwordHide = !passwordHide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="passwordHide">
+          <mat-icon>
+            {{passwordHide ? 'visibility_off' : 'visibility'}}
+          </mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+    <div class="title-style-2">
+      Confirm Username and Password
+    </div>
+
+    <div class="test">
+      <mat-form-field style="margin-bottom:-1.25em;"
+                      class="log-in-field"
+                      appearance="outline">
+        <mat-label>Confirm Username</mat-label>
+        <input matInput
+               formControlName="confirmEmail">
+
+        <div class="confirm-symbol"
+                matSuffix>
+          <mat-icon
+                    [ngClass]="{'success': this.emailCheck.value, 'fail' : !this.emailCheck.value }"
+                    *ngIf ="this.form.controls['confirmEmail'].dirty">
+            {{this.emailCheck.value ? 'check' : 'close'}}
+          </mat-icon>
+        </div>
+
+      </mat-form-field>
+
+    </div>
+
+    <div class="test">
+
+
+      <mat-form-field style="margin-bottom: -1.25em;"
+                      class="log-in-field"
+                      appearance="outline">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput
+               formControlName="confirmPassword"
+               [type]="confirmPasswordHide ? 'password' : 'text'">
+
+        <button *ngIf ="this.form.controls['confirmPassword'].dirty"
+                type="button"
+                mat-icon-button
+                matSuffix (click)="confirmPasswordHide = !confirmPasswordHide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="confirmPasswordHide">
+          <mat-icon
+                    [ngClass]="{'success': this.passwordCheck.value }">
+            {{this.passwordCheck.value ? 'check' : confirmPasswordHide ? 'visibility_off' : 'visibility'}}
+          </mat-icon>
+        </button>
+
+      </mat-form-field>
+
+    </div>
+    <button color="primary"
+            class="log-in-button"
+            type="submit"
+            [disabled]="!form.valid"
+            mat-raised-button>
+      Sign Up
+    </button>
+  </form>
+</div>

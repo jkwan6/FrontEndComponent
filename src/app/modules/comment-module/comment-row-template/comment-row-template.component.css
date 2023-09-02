@@ -1,0 +1,41 @@
+.module-container {
+  border: solid;
+  border-width: thin;
+  border-color: rgba(128, 128, 128, 0.3);
+  border-left: none;
+  border-right: none;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.author-box {
+    padding-left: 8px;
+    text-decoration:underline;
+    font-weight: 600;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  border-radius: 5px;
+  padding: 0px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  margin-bottom: 0px;
+  white-space: pre-line;
+}
+
+
+.comment-box{
+}
+
+.date-box{
+    align-self:flex-end;
+    padding-right:5px;
+    font-size:0.7em;
+    font-style:italic;
+}

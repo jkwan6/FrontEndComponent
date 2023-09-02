@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <div class="body-width flex-container">
+
+    <!--<span>
+    </span>-->
+    <div class="Flex-Content1">
+      <mat-icon class="theme-symbol">{{(this.toggleStatus) ? 'nights_stay' : 'light_mode'}}</mat-icon>
+      <mat-slide-toggle (click)="onToggle()"
+                        [matTooltip]="(this.toggleStatus) ? 'Toggle Light Theme' : 'Toggle Dark Theme'"
+                        [matTooltipShowDelay]="showDelay.value"
+                        [matTooltipHideDelay]="hideDelay.value">
+      </mat-slide-toggle>
+    </div>
+  </div>
+
+</mat-toolbar>

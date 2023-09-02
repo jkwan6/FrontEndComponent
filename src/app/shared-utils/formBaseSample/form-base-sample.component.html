@@ -1,0 +1,59 @@
+<div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <!--GOTTA MANUALLY CHANGE formControlName-->
+    <mat-form-field>
+      <mat-label>PARAM_1:</mat-label>
+      <input matInput
+             formControlName="author"
+             placeholder="Param_1_Placeholder" />
+      <mat-error>
+        Param 1 is Required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>PARAM_2:</mat-label>
+      <input matInput
+             formControlName="commentsDescription"
+             placeholder="Param_2_Placeholder" />
+      <mat-error>
+        Param 2 is Required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+
+      <mat-label>Array of Test Objects</mat-label>
+
+      <mat-select formControlName="test1">
+
+        <mat-option *ngFor="let test of testArray"
+                    [value]="test">
+          {{test}}
+        </mat-option>
+
+      </mat-select>
+
+    </mat-form-field>
+
+
+    <!--SUBMIT/CANCEL BUTTONS-->
+    <div>
+      <button
+          mat-flat-button
+          color="primary"
+          type="submit"
+          [disabled]="!form.valid">
+        Save
+      </button>
+      <button
+          mat-flat-button
+          color="secondary"
+          [routerLink]="['/home']">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

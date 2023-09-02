@@ -1,0 +1,28 @@
+<div class="Container">
+  <div class="log-in-body">
+
+    <div class="symbol-container">
+      <mat-icon style="transform: scale(3); padding-top:15px;">account_circle</mat-icon>
+    </div>
+
+    <div class="Login-Block">
+      <h4 class="title-style">Log In</h4>
+      <div class="log-in-details">
+
+        <app-login-form></app-login-form>
+
+      </div>
+    </div>
+
+    <div class="Flex-Content3">
+      <div class="create-account">
+        <div class="button1">
+          <!--Forgot Password?-->
+        </div>
+        <a class="button2" [routerLink]="['/signup']">
+          Create Account
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

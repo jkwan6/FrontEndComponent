@@ -1,0 +1,40 @@
+.Container{
+    display:flex;
+    height:inherit;
+    flex-direction:column;
+    flex-grow:1;
+    flex-shrink:1;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-test{
+    flex-shrink:1;
+    flex-grow:1;
+}
+
+.filler1{
+    flex-shrink:1;
+    flex-grow:1;
+    min-height:20px;
+}
+
+.filler2 {
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-height: 20px;
+}
+
+
+
+/*.Login-Block{
+    flex-grow:1;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+*/
+/*transition: transform 0.5s;*/

@@ -1,0 +1,11 @@
+.Container {
+  display: flex;
+  /*align-content: center;*/
+  /*align-items: center;*/
+  /*justify-items: center;*/
+  justify-content: center;
+}
+
+.HomeWebgl {
+  border-radius: 20px;
+}

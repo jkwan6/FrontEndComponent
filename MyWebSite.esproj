@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.45-alpha">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Command to run on project build -->
+    <BuildCommand>
+    </BuildCommand>
+    <!-- Command to create an optimized build of the project that's ready for publishing -->
+    <ProductionBuildCommand>npm run build</ProductionBuildCommand>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\MyWebSite</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\route-guard\" />
+    <Folder Include="src\app\service\ThreeJsService\" />
+    <Folder Include="src\app\sub-pages\sub-pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\sub-pages\ThreeJs\three-js-page7\shaders\fragment.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\sub-pages\ThreeJs\three-js-page7\shaders\vertex.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\service\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\service\**" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+.webgl {
+  padding: 0;
+  margin: 0;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  height: 91.4vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

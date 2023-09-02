@@ -1,0 +1,63 @@
+
+.container{
+    width: stretch;
+    flex-grow:1;
+}
+
+.log-in-field {
+    flex-grow:1;
+    flex-shrink:1;
+    width: inherit;
+}
+
+.log-in-button {
+  margin-top: 3px;
+  width: 100px;
+  align-self: end;
+}
+
+.title-style-1{
+    font-weight: 500;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.title-style-2 {
+  display:flex;
+  flex-direction: row;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+
+.success{
+    color:green;
+}
+.fail{
+    color:red;
+}
+
+
+.test{
+    display: flex;
+    flex-direction: row;
+    width: stretch;
+}
+
+
+.test2{
+    width: inherit;
+}
+
+.confirm-symbol{
+    padding-right: 4px;
+    align-content: center
+}
+
+
+@media (max-width: 599px) {
+  .log-in-body {
+    border: none;
+  }
+}

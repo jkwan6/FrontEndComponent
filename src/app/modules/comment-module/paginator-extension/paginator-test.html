@@ -1,0 +1,31 @@
+<div class="pg-container">
+  <mat-paginator appPagination
+    [length]="testPaginator.length"
+    [pageSize]="testPaginator.pageSize"
+    [pageIndex]='testPaginator.pageIndex'
+    [hidePageSize]='false'
+    [showFirstLastButtons]="true"
+                                  [pageSizeOptions]="[5, 10, 15]"
+    (page)="showTestEmit($event)">
+  </mat-paginator>
+  <!--<div>
+    Page Size:
+    <input
+           [(ngModel)]="testPaginator.pageSize"
+           type="text"
+           placeholder="Enter Page Size" />
+
+    Length:
+    <input
+           [(ngModel)]="testPaginator.length"
+           type="text"
+           placeholder="Enter Length">
+
+    Page Index:-->
+    <!--<input
+           [(ngModel)]="testPaginator.pageIndex"
+           type="text"
+           placeholder="Enter Index">-->
+
+  <!--</div>-->
+</div>

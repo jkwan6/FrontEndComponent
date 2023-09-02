@@ -1,0 +1,35 @@
+<div>
+  <form [formGroup]="form" class="flex-container">
+
+    <mat-form-field style="margin-bottom: -1.00em;"
+                    appearance="fill">
+      <mat-label>Post a Comment</mat-label>
+      <textarea matInput
+                formControlName="commentsDescription"
+                cdkTextareaAutosize
+                class="text-area-styles"></textarea>
+    </mat-form-field>
+
+    <!--SUBMIT/CANCEL BUTTONS-->
+  </form>
+
+  <div class="flex-content">
+    <div class="form-buttons">
+      <button mat-flat-button
+              (click)="[onSubmit(), clearTextArea()]"
+              color="primary"
+              type="submit"
+              [disabled]="!form.valid || !this.isLoggedIn">
+        Post
+      </button>
+      <button (click)="clearTextArea()"
+              class="butts"
+              mat-flat-button
+              color="secondary"
+              [disabled]="!this.isLoggedIn">
+        Clear
+      </button>
+    </div>
+    <div class="error" *ngIf="!this.isLoggedIn">Login is Required</div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+h1 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.WelcomeMessage{
+    padding:35px;
+    padding-top:15px;
+    padding-bottom:0;
+    margin-bottom:0px;
+    text-align:left;
+    text-decoration:underline;
+}
+
+.DefaultText{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+
+.container{
+    display:flex;
+    flex-flow:column;
+    height:inherit;
+}
+
+app-comment-module{
+    display:flex;
+/*    flex-grow:1;*/
+/*    height: inherit;*/
+}
+
+.body-text{
+    padding:25px;
+}

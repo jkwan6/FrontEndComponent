@@ -1,0 +1,20 @@
+<div class="Container">
+
+  <div class="filler1">
+  </div>
+
+  <div class="login-test">
+    <div *ngIf="loginCheck">
+      <app-login></app-login>
+    </div>
+
+    <div *ngIf="!loginCheck">
+      <app-sign-up></app-sign-up>
+    </div>
+  </div>
+
+  <div class="filler2"></div>
+
+</div>
+
+

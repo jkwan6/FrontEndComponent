@@ -1,0 +1,100 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.log-in-body {
+  width: 400px;
+  height: 500px;
+  border: solid;
+  border-width: thin;
+  border-color: rgba(128, 128, 128, 0.6);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title-style {
+  font-weight: 500;
+  font-size: x-large;
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
+
+.symbol-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login-Block {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-in-details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Flex-Content3 {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+}
+
+.create-account {
+  width: 100%;
+  align-self: end;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.button1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  color: blue;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.button2 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: blue;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.button2:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+  .log-in-body {
+    border: none;
+    height: 470px;
+    width: 95%;
+  }
+}

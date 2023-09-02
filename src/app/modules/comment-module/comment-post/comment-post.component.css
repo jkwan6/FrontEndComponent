@@ -1,0 +1,40 @@
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+}
+
+.text-area-styles{
+    min-height:40px;
+}
+
+
+.form-buttons {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+
+.flex-content{
+    display:flex;
+}
+
+.error {
+  align-self: center;
+  padding-bottom: 5px;
+  margin-left: 0px;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.butts{
+    border:solid;
+    border-width:thin;
+    margin-left: 3px;
+    border-color: rgb(128, 128, 128, 0.3)
+}

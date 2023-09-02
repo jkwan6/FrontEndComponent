@@ -1,0 +1,41 @@
+<div class="comment-container">
+
+  <!--TABLE BEGINS-->
+  <table mat-table
+         class="comments-table color-management"
+         [dataSource]="Comments"
+         matSortDisableClear>
+
+    <ng-container matColumnDef="CommentsDefinition">
+      <th class="title" mat-header-cell *matHeaderCellDef>Leave a Comment</th>
+      <td mat-cell *matCellDef="let IComments">
+        <app-row-comment-template [comments]="IComments">
+        </app-row-comment-template>
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  <mat-divider class="comment-divider"></mat-divider>
+  <app-comment-post></app-comment-post>
+  <!--<form-base-sample></form-base-sample>-->
+  <!--<div class="add-comment-container">
+    Add Comment
+  </div>-->
+  <!--<div class="add-comment-container">test</div>-->
+
+  <mat-divider class="paginator-divider"></mat-divider>
+
+  <div class="flex-class">
+    <mat-paginator Pagination [hidden]="!Comments"
+                   (page)="loadData()"
+                   [pageSize]="5"
+                   showFirstLastButtons
+                   [hidePageSize]='true'
+                   class="flex-class color-management">
+    </mat-paginator>
+  </div>
+</div>

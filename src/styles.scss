@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /*  height:100%;*/
+  /*  padding-top: 65px;*/
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+/*  background: rgb(250, 250, 250);
+  background-color: whitesmoke;*/
+}
+
+.body-width{
+    max-width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.ng-star-inserted{
+    height:inherit;
+}

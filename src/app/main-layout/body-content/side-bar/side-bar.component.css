@@ -1,0 +1,48 @@
+.flex-content{
+
+}
+
+.NavBarButton {
+  /*background-color:whitesmoke;*/
+  width: 100%;
+  border-radius:0px;
+  text-align:left;
+}
+
+.NavBarButton:hover {
+  background: rgb(200, 200, 200, .8);
+  text-decoration: underline;
+}
+
+.NavBarButtonBottom {
+  /*color:darkblue;*/
+  /*background-color: whitesmoke;*/
+  width: 100%;
+  border-radius: 0px;
+  text-align: left;
+}
+
+.NavBarButtonBottom:hover {
+  text-decoration: underline;
+}
+
+.SideBarFlexContainer{
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.Flex-Content2{
+    margin-top:auto;
+}
+
+/*.NavBarTitle{
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:5px;
+  text-decoration:underline;*/
+  /*padding-left:17px;*/
+  /*font-weight:600;
+  color:red;
+}*/

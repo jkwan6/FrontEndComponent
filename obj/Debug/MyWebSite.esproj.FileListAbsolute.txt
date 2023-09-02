@@ -1,0 +1,4 @@
+C:/Projects/ProjectToPublish/MyWebSite/MyWebSite/MyWebSite/obj/Debug/MyWebSite.esproj.SuggestedBindingRedirects.cache
+C:/Projects/ProjectToPublish/MyWebSite/MyWebSite/MyWebSite/obj/Debug/MyWebSite.esproj.CoreCompileInputs.cache
+C:/Projects/ProjectToPublish/MyWebSite/FrontEnd/MyWebSite/MyWebSite/obj/Debug/MyWebSite.esproj.SuggestedBindingRedirects.cache
+C:/Projects/ProjectToPublish/MyWebSite/FrontEnd/MyWebSite/MyWebSite/obj/Debug/MyWebSite.esproj.CoreCompileInputs.cache

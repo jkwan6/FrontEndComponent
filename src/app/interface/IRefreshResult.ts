@@ -1,0 +1,1 @@
+export interface IRefreshResult {  message: string;  accessToken: string;}

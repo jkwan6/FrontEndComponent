@@ -1,0 +1,89 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+app-sign-up-form{
+    width: 80%;
+}
+
+.sign-up-body {
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  border: solid;
+  border-width: thin;
+  border-color: rgba(128, 128, 128, 0.6);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 35px;
+}
+
+.signup {
+  flex-grow:1;
+  margin-top: 20px;
+}
+
+
+.Login-Block {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.back-button{
+    z-index: 1;
+}
+
+.test {
+    position: absolute;
+    width: 100%;
+    align-self:center;
+    margin: 0px;
+}
+
+
+
+.log-in-details {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-style {
+  font-weight: 500;
+  font-size: x-large;
+  text-decoration: underline;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media (max-width: 599px) {
+  .sign-up-body {
+    border: none;
+  }
+  .back-button-row {
+    margin-left:80px;
+  }
+  .sign-up-body {
+    height: 470px;
+  }
+}

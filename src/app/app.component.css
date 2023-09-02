@@ -1,0 +1,43 @@
+/*CSS Styles for Overall Layout*/
+
+
+.LayoutFlexContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+/*  background-color: #424242;*/
+  padding: 0px;
+}
+
+.NavBarStyles {
+  flex: 1 1 auto;
+  flex-grow:0;
+  flex-shrink: 1;
+}
+
+.BodyStyles {
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+  flex-grow:1;
+  flex-shrink: 1;
+}
+
+.FooterStyles {
+  flex: 1 1 auto;
+  flex-grow:0;
+  width:100%;
+  bottom:0px;
+}
+
+.custom-width{
+    min-width:1200px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.body-flex{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}

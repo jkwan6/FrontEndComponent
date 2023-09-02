@@ -1,0 +1,22 @@
+<div #container class="body-width flex-class">
+
+  <!--[@.disabled]="true"-->
+  <mat-drawer-container [@.disabled]="true"
+                        class="flex-class height-inherit">
+
+    <mat-drawer class="sidenav-specs"
+                #drawer mode="side"
+                position="start"
+                style="overflow:unset;">
+      <app-side-bar></app-side-bar>
+    </mat-drawer>
+
+
+    <div #bodyElement id="bodyElement" class="height-inherit flex-class body-test">
+      <router-outlet class="body-padding flex-class"></router-outlet>
+    </div>
+
+  </mat-drawer-container>
+
+</div>
+

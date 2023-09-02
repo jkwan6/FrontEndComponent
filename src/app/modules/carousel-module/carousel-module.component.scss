@@ -1,0 +1,34 @@
+.Carousel-Body{
+    border: solid;
+    border-width: thin;
+    height:200px;
+    max-width:max-content;
+    width: auto;
+    display:flex;
+    flex-wrap:nowrap;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 1s;
+  overflow:clip;
+}
+
+.carousel-item {
+  transition: transform 1s;
+  min-width: stretch;
+}
+
+.back-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+
+.carousel-test {
+  display: flex;
+  transition: transform 1s;
+}

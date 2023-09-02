@@ -1,0 +1,15 @@
+.webgl {
+  padding: 0;
+  margin: 0;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  height: 92vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1e1a20;
+  /*z-index: 0;*/
+}
